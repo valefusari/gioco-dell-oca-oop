@@ -1,0 +1,15 @@
+package oca.service;
+
+/**
+ * Enumerazione delle penitenze che un giocatore può ricevere.
+ */
+public enum Penitenze {
+    FARE_DIECI_FLESSIONI,
+    MANGIARE_UNA_CIPOLLA_CRUDA,
+    METTERSI_SOTTO_AL_TAVOLO,
+    OFFRIRE_UNA_BIRRA_AL_GIOCATORE_SUCCESSIVO,
+    RACCONTARE_UNA_BARZELLETTA,
+    RIPRESENTARSI_AL_PROSSIMO_APPELLO,
+    RECITARE_UNA_POESIA,
+    NON_POTER_PARLARE_PER_3_MINUTI
+}
