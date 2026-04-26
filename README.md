@@ -1,36 +1,33 @@
-# COMPILARE
+# Game of the Goose (Gioco dell'Oca) - OOP Implementation
 
+This project is a digital simulation of the classic "Game of the Goose" board game, developed as part of the **Object-Oriented Programming (OOP)** laboratory at the University of L'Aquila (UnivAQ).
+
+## Project Overview
+The application demonstrates the core principles of OOP, including:
+* **Encapsulation:** Managing player states and board rules.
+* **Inheritance/Polymorphism:** Implementation of special board cells with unique effects.
+* **Maven Integration:** Managed build system and dependency management.
+
+## Repository Contents
+* `src/`: Source code containing game logic and UI.
+* `documentation/`: Class diagrams (UML) and project report.
+* `pom.xml`: Maven configuration file.
+
+---
+
+## Technical Instructions (How to Run)
+
+### 1. Compile the Project
+To compile the source code and clean temporary files:
 ```mvn clean compile```
-
-o
-
-```mvn compile```
-
-Se non volete pulire i file temporanei. ```clean``` è usbile con tutti i seguenti comandi.
-
-# TESTARE
-
-Se ci sono classi di test e librerie di test (Junit) è possibile lanciare i test case
-
+### 2. Run Tests
+If you want to execute the JUnit test cases:
 ```mvn test```
-
-# CREARE ARCHIVIO
-
-```mvn package```
-
-Nel caso dei vostri progetti genera un file jar nella cartella target.
-
-# INSTALLARE NEL REPOSITORY LOCARE
-
-```mvn install```
-
-# LANCIARE UN PROGETTO JAVA DA TERMINALE
-
-```mvn exec:java -Dexec.mainClass="change.it.Runner"```
-
-Se avete usato il pluging ```org.codehaus.mojo.exec-maven-plugin``` potete evitare di usare il parametro ```-Dexec.mainClas``` perchè il main è definito direttamtente all'interno del pom file.
-
-Con ```-Dexec.args```posso specificare gli argomenti da command line. I parametri devono essere separati da spazio.
+### 3. Build the Package
+To generate the executable .jar file:
+``` mvn package```
+### 4. Launch the Game
+``` mvn exec:java -Dexec.mainClass="change.it.Runner"```
 
 
 
